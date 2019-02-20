@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function render() {
+			var inputData =frmMain.txtinput.value;
+			alert(inputData);	
+			console.log('hello world');
+			var renderText;
+			renderText="kesa dia";
+			console.log(renderText);
+			var num=100;
+			console.log(num);
+			var inputData01 =parseInt(frmMain.txtinput01.value);
+			var inputData02 =parseInt(frmMain.txtinput02.value);
+			result= inputData01 + inputData02;
+			alert(result)
+		}
+		function render2() {
+			result2= inputData01 - inputData02;
+			alert(result2);
+		}
+		function render3(){
+			result3 = inputData01 * inputData02;
+			alert(result3);
+		}
+		function render4(){
+			result4 =inputData01/ inputData02;
+			alert(result4);
+		}
+	</script>
+</head>
+<body >
+	<form name="frmMain">
+		<label>Input:</label>
+		<input type="text" name="txtinput01" >
+		<input type="text" name="txtinput02">
+		<br>
+		<input type="submit" value="+"  onclick="render()">   
+		<input type="submit" value="-" onclick="render2()">
+		<input type="submit" value="*" onclick="render3()">
+		<input type="submit" value="/" onclick="render4()">
+	</form>
+</body>
+</html>
