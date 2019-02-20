@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class2</title>
+	<script>
+		var i=10;
+		i++;
+		i--;
+		++i;
+		--i;
+		console.log(++i);
+		console.log(i);
+		console.log(i--);
+		console.log(i);
+		console.log(1<2<3);
+		alert(3>2>1);
+		alert(i+=2);
+		function render() {
+			var a =parseInt(form2.x1.value);
+			var b =parseInt(form2.x2.value);
+			var c=parseInt(form2.x3.value);
+			var x;
+			x= (-b+Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+			
+			alert(x);
+		}
+		var i =10;
+		alert(i +2);
+		var a,b,c;
+		a =parseInt(prompt('enter value of a'));
+		b =parseInt(prompt('enter value of b'));
+		c =parseInt(prompt('enter value of c'));
+		x= (-b+Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+		alert(x);
+		alert('2'+'23');
+
+	</script>
+</head>
+<body>
+	<form name="form2">
+		<label>Input:</label>
+		<input type="text" name="x1" placeholder="a">
+		<input type="text" name="x2" placeholder="b">
+		<input type="text" name="x3" placeholder="c">
+		<br>
+		<input type="submit" value="result"  onclick="render()">
+		
+
+</body>
+</html>
